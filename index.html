@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday, Ayesha 💗</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff0f6;--bg2:#ffd9e8;--card:rgba(255,255,255,.78);--ink:#3d1630;--muted:#85506d;--pink:#e5498a;--deep:#b5256a;--soft:#ffc2dc;--line:rgba(181,37,106,.16);--shadow:0 18px 50px rgba(181,37,106,.12);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#2b0f21;--bg2:#3a1230;--card:rgba(255,255,255,.07);--ink:#ffe9f3;--muted:#e0a9c6;--pink:#ff6fae;--deep:#ff9ccb;--soft:#7a2257;--line:rgba(255,200,226,.2);--shadow:0 18px 50px rgba(0,0,0,.35)}}
+:root[data-theme="dark"]{--bg:#2b0f21;--bg2:#3a1230;--card:rgba(255,255,255,.07);--ink:#ffe9f3;--muted:#e0a9c6;--pink:#ff6fae;--deep:#ff9ccb;--soft:#7a2257;--line:rgba(255,200,226,.2);--shadow:0 18px 50px rgba(0,0,0,.35)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:linear-gradient(180deg,var(--bg),var(--bg2)) fixed;color:var(--ink);font-family:'DM Sans',system-ui,sans-serif;overflow-x:hidden;line-height:1.6}
+button{font:inherit;cursor:pointer;color:inherit}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;font-weight:500;line-height:1.12}
+#fx{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.fl{position:absolute;bottom:-40px;color:var(--pink);opacity:.35;animation:rise linear infinite}
+@keyframes rise{0%{transform:translateY(0) translateX(0) rotate(-10deg)}50%{transform:translateY(-60vh) translateX(26px) rotate(10deg)}100%{transform:translateY(-120vh) translateX(-10px) rotate(-10deg)}}
+nav{position:sticky;top:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:14px 6vw;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.logo{font-family:'Playfair Display',serif;font-style:italic;font-size:1.2rem}
+nav div{display:flex;gap:18px}
+nav a{color:var(--muted);text-decoration:none;font-size:.9rem;font-weight:500}
+nav a:hover{color:var(--deep)}
+@media(max-width:600px){nav div a:nth-child(n+3){display:none}}
+section{position:relative;z-index:1;padding:90px 6vw;max-width:1040px;margin:auto}
+.center{text-align:center}
+.hero{min-height:86vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.bigheart{font-size:3.4rem;animation:beat 1.4s ease-in-out infinite;filter:drop-shadow(0 10px 18px rgba(229,73,138,.4))}
+@keyframes beat{0%,40%,100%{transform:scale(1)}15%{transform:scale(1.18)}30%{transform:scale(1.05)}}
+.kicker{color:var(--deep);font-weight:600;font-size:.95rem;margin:14px 0 10px}
+h1{font-size:clamp(2.8rem,9vw,6rem);letter-spacing:-.02em}
+h1 em{color:var(--pink)}
+.lead{max-width:540px;color:var(--muted);margin:20px auto 0;font-size:1.1rem}
+h2{font-size:clamp(2rem,5vw,3rem);margin-bottom:10px}
+.sub{color:var(--muted);max-width:540px}
+.center .sub{margin:0 auto}
+.row{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.center .row,.hero .row{justify-content:center}
+.btn{border:0;border-radius:999px;padding:13px 26px;background:var(--pink);color:#fff;font-weight:600;box-shadow:0 10px 24px rgba(229,73,138,.35);transition:transform .18s,box-shadow .18s;text-decoration:none;display:inline-block}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 28px rgba(229,73,138,.42)}
+.btn.ghost{background:var(--card);color:var(--deep);border:1px solid var(--line);box-shadow:none}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:38px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:26px;box-shadow:var(--shadow);text-align:left}
+.card .ic{font-size:1.6rem;display:block;margin-bottom:12px}
+.card h3{font-size:1.25rem;margin-bottom:6px}
+.card p{color:var(--muted);font-size:.96rem}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:36px 22px;margin-top:32px;box-shadow:var(--shadow)}
+.stat{display:flex;justify-content:center;gap:34px;flex-wrap:wrap}
+.stat div strong{display:block;font-family:'Playfair Display',serif;font-size:2.6rem;color:var(--pink);font-weight:600}
+.stat div span{color:var(--muted);font-size:.9rem}
+.arena{position:relative;height:150px;margin-top:22px}
+.arena button{position:absolute;top:22px}
+#yes{left:50%;transform:translateX(-112%)}
+#no{left:50%;transition:left .18s,top .18s}
+#pollMsg,#cakeMsg{min-height:1.6em;margin-top:10px;color:var(--deep);font-weight:600}
+.cake{width:200px;margin:30px auto 6px;user-select:none}
+.candles{display:flex;justify-content:center;gap:22px;height:56px;align-items:flex-end}
+.candle{width:12px;height:34px;background:linear-gradient(#fff,var(--soft));border-radius:4px;position:relative}
+.flame{position:absolute;left:50%;top:-22px;width:14px;height:20px;margin-left:-7px;background:radial-gradient(#fff6a8,#ffb02e);border-radius:50% 50% 50% 50%/65% 65% 35% 35%;animation:fl .4s ease-in-out infinite alternate;transition:opacity .2s}
+.out .flame{opacity:0;animation:none}
+@keyframes fl{to{transform:scale(1.15,.9) rotate(5deg)}}
+.t1{height:54px;background:#ff9ccb;border-radius:18px 18px 0 0;border-bottom:8px solid #fff}
+.t2{height:62px;background:var(--pink);border-radius:0 0 22px 22px;width:116%;margin-left:-8%;background-image:radial-gradient(circle at 12px 8px,#fff 5px,transparent 6px);background-size:30px 30px}
+.bar{height:16px;border-radius:99px;background:var(--line);overflow:hidden;max-width:440px;margin:18px auto 8px}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#ff9ccb,var(--pink));border-radius:99px}
+#gift{margin-top:14px;min-height:3.2em}
+.rank{max-width:560px;margin:34px auto 0;display:grid;gap:10px;text-align:left}
+.rank div{display:flex;justify-content:space-between;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 18px}
+.rank span:last-child{color:var(--muted);text-align:right}
+footer{position:relative;z-index:1;text-align:center;padding:50px 20px 80px;color:var(--muted);border-top:1px solid var(--line)}
+.pop{position:fixed;pointer-events:none;z-index:50;font-size:24px;animation:pop 1.1s ease-out forwards}
+@keyframes pop{to{transform:translate(var(--x),var(--y)) scale(.4);opacity:0}}
+.trail{position:fixed;pointer-events:none;z-index:40;font-size:14px;color:var(--pink);animation:tr .9s ease-out forwards}
+@keyframes tr{to{transform:translateY(-34px) scale(.3);opacity:0}}
+.mbtn{border:1px solid var(--line);background:var(--card);color:var(--deep);border-radius:999px;padding:6px 14px;font-size:.85rem;font-weight:600;transition:transform .18s}
+.mbtn:hover{transform:translateY(-2px)}
+.mbtn.on{background:var(--pink);color:#fff;border-color:transparent}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+:focus-visible{outline:3px solid var(--deep);outline-offset:3px}
+</style>
+</head>
+<body>
+<audio id="song" loop preload="auto" autoplay playsinline>
+  <source src="music.mp3" type="audio/mpeg">
+  <source src="music.m4a" type="audio/mp4">
+  <source src="music.wav" type="audio/wav">
+  <source src="music.ogg" type="audio/ogg">
+</audio>
+<div id="fx" aria-hidden="true"></div>
+<nav><span class="logo">For Ayesha 💗</span><div><a href="#about">Why you</a><a href="#poll">Poll</a><a href="#cake">Cake</a><a href="#gift-sec">Gift</a><button id="musicBtn" class="mbtn" aria-label="Play music">♫ Play music</button></div></nav>
+
+<section class="hero" id="top">
+  <div class="bigheart">💗</div>
+  <p class="kicker">Today is all about you, Happiest 27th Birthday!</p>
+  <h1>Happy Birthday,<br><em>Behna.</em></h1>
+  <p class="lead">A little pink corner of the internet, made by your one and only sister. Take a look around. Some buttons may not cooperate.</p>
+  <div class="row"><a class="btn" href="#about">Start exploring</a><button class="btn ghost" id="confettiBtn">It's already 20 Nov💕</button></div>
+</section>
+
+<section id="about" class="center">
+  <h2>Why you’re my favourite</h2>
+  <p class="sub">A short, fully accurate list from the person who has known you the longest.</p>
+  <div class="grid">
+    <div class="card"><span class="ic">🌸</span><h3>Kind heart</h3><p>You care deeply about the people around you, even when you pretend you don’t.</p></div>
+    <div class="card"><span class="ic">✨</span><h3>Main character</h3><p>You walk into a room and it gets brighter (especially our home). Also louder. Mostly brighter.</p></div>
+    <div class="card"><span class="ic">🍫</span><h3>Snack expert</h3><p>You can find anything edible in this house (fridge) within 40 seconds. Impressive.</p></div>
+    <div class="card"><span class="ic">🎀</span><h3>My person</h3><p>Of all the siblings in the world, I got you. Honestly, I got lucky (kindly send 20k).</p></div>
+  </div>
+  <div class="panel stat">
+    <div><strong>1</strong><span>sister you have</span></div>
+    <div><strong>100%</strong><span>chance she’s right</span></div>
+    <div><strong>∞</strong><span>hugs owed to me</span></div>
+  </div>
+</section>
+
+<section id="poll" class="center">
+  <h2>One quick question</h2>
+  <p class="sub">Who is the best sister you’ve got? Choose wisely.</p>
+  <div class="panel">
+    <div class="arena" id="arena">
+      <button class="btn" id="yes">Obviously you 😌</button>
+      <button class="btn ghost" id="no">Someone else 🙄</button>
+    </div>
+    <div id="pollMsg"></div>
+  </div>
+</section>
+
+<section id="cake" class="center">
+  <h2>Make a wish 🎂</h2>
+  <p class="sub">Blow out the candles. It should be simple.</p>
+  <div class="cake"><div class="candles" id="candles"></div><div class="t1"></div><div class="t2"></div></div>
+  <div id="cakeMsg"></div>
+  <div class="row"><button class="btn" id="blow">Blow 💨</button></div>
+</section>
+
+<section id="gift-sec" class="center">
+  <h2>Your gift is loading 🎁</h2>
+  <p class="sub">It’s a big one, so please be patient.</p>
+  <div class="panel">
+    <div class="bar"><i id="fill"></i></div>
+    <div id="pct" style="font-weight:600">0%</div>
+    <div id="gift"></div>
+    <div class="row"><button class="btn" id="load">Load gift</button></div>
+  </div>
+</section>
+
+<section id="rankings" class="center">
+  <h2>Official sister rankings 🏆</h2>
+  <p class="sub">Strictly scientific. Final and non-negotiable.</p>
+  <div class="rank">
+    <div><span>Best sister</span><span>Me (your only one)</span></div>
+    <div><span>Second best sister</span><span>Doesn’t exist</span></div>
+    <div><span>Most loved sibling</span><span>Ayesha,(Salary toh aa gyi hogi na?)💗</span></div>
+    <div><span>Most likely to steal my snacks</span><span>Ayesha, again</span></div>
+  </div>
+</section>
+
+<footer>
+  <div style="font-size:1.6rem">💗</div>
+  Made with love by your only sister Fama for Ayesha, on her birthday.
+</footer>
+
+<script>
+const $=id=>document.getElementById(id);
+const fx=$('fx'),hs=['♥','♡','💗','💕','♥'];
+for(let i=0;i<26;i++){const e=document.createElement('span');e.className='fl';e.textContent=hs[i%hs.length];e.style.left=Math.random()*100+'%';e.style.fontSize=(12+Math.random()*22)+'px';e.style.animationDuration=(14+Math.random()*16)+'s';e.style.animationDelay=(-Math.random()*25)+'s';fx.appendChild(e)}
+
+function hearts(x,y,n){
+  const em=['💗','💕','💖','🎀','✨','♥'];
+  for(let i=0;i<n;i++){const p=document.createElement('span');p.className='pop';p.textContent=em[i%em.length];
+    p.style.left=x+'px';p.style.top=y+'px';
+    p.style.setProperty('--x',(Math.random()*500-250)+'px');p.style.setProperty('--y',(Math.random()*-400-40)+'px');
+    document.body.appendChild(p);setTimeout(()=>p.remove(),1200)}
+}
+const burst=()=>hearts(innerWidth/2,innerHeight/2,26);
+$('confettiBtn').onclick=burst;
+document.addEventListener('click',e=>{if(e.target.closest('button,a'))return;hearts(e.clientX,e.clientY,8)});
+let last=0;
+document.addEventListener('pointermove',e=>{
+  if(e.pointerType!=='mouse'||Date.now()-last<90)return;last=Date.now();
+  const t=document.createElement('span');t.className='trail';t.textContent='♥';t.style.left=e.clientX+'px';t.style.top=e.clientY+'px';
+  document.body.appendChild(t);setTimeout(()=>t.remove(),900)});
+
+const no=$('no'),arena=$('arena'),pm=$('pollMsg');
+const dodge=['You only have one sister 😌','Nice try. Choose again.','That option is unavailable','Why are you chasing it?','Just click the left one 😭','Wow, the audacity'];
+let d=0;
+function run(e){if(e&&e.cancelable)e.preventDefault();d++;
+  const w=arena.clientWidth-no.offsetWidth,h=arena.clientHeight-no.offsetHeight;
+  no.style.left=Math.max(0,Math.random()*w)+'px';no.style.top=Math.max(0,Math.random()*h)+'px';no.style.transform='none';
+  pm.textContent=dodge[d%dodge.length]}
+no.addEventListener('mouseenter',run);
+no.addEventListener('touchstart',run,{passive:false});
+no.addEventListener('click',run);
+$('yes').onclick=()=>{pm.textContent='Correct. I’m your only sister, so it was never a contest 💗';burst()};
+
+const cs=$('candles');
+for(let i=0;i<5;i++){const c=document.createElement('div');c.className='candle';c.innerHTML='<div class="flame"></div>';cs.appendChild(c)}
+let blows=0;const cm=$('cakeMsg');
+const nopes=['So close. Try harder.','They relit themselves 😈','Was that even a blow?','Wish cancelled. Again.','Okay, that was weak.'];
+$('blow').onclick=()=>{blows++;cs.classList.add('out');
+  if(blows>=6){cm.textContent='Fine, you win. Wish granted ✨';burst();blows=0;return}
+  cm.textContent='Candles out…';
+  setTimeout(()=>{cs.classList.remove('out');cm.textContent=nopes[blows%nopes.length]},900)};
+
+let tries=0,busy=false;
+const fill=$('fill'),pct=$('pct'),gift=$('gift'),load=$('load');
+const stall=['Stuck at 99%. Classic internet 🙃','Almost there! (not really)','99% again. One more try.'];
+load.onclick=()=>{if(busy)return;busy=true;gift.textContent='';
+  let p=0;const lim=tries>=3?100:99;
+  const t=setInterval(()=>{p+=Math.random()*6+1;if(p>=lim)p=lim;
+    fill.style.width=p+'%';pct.textContent=Math.floor(p)+'%';
+    if(p>=lim){clearInterval(t);busy=false;tries++;
+      if(lim===100){gift.innerHTML='🎁 Your gift: <b>one huge hug</b> and dinner on YOU. Redeemable today only, no refunds. 💗';load.textContent='Open again';burst();tries=0}
+      else{gift.textContent=stall[(tries-1)%stall.length];load.textContent='Try again 🔄'}}
+  },90)};
+
+/* Music: plays your own file named "music" (same folder as this page) */
+const mb=$('musicBtn'),song=$('song');
+song.volume=.7;
+let playing=false,userPaused=false;
+function setUI(on){
+  mb.textContent=on?'♫ Music on':'♫ Play music';
+  mb.classList.toggle('on',on);
+  mb.setAttribute('aria-label',on?'Pause music':'Play music');
+}
+function startMusic(){
+  if(playing)return Promise.resolve();
+  return song.play().then(()=>{playing=true;setUI(true)}).catch(()=>{setUI(false)});
+}
+function stopMusic(){song.pause();playing=false;setUI(false)}
+mb.onclick=e=>{e.stopPropagation();if(playing){userPaused=true;stopMusic()}else{userPaused=false;startMusic()}};
+/* Try to start immediately on load */
+startMusic();
+/* If the browser blocks autoplay, start on her first tap, click or key press */
+const evs=['pointerdown','touchend','click','keydown'];
+function firstTouch(e){
+  if(e.target&&e.target.closest&&e.target.closest('#musicBtn'))return;
+  if(userPaused||playing){evs.forEach(ev=>removeEventListener(ev,firstTouch));return}
+  startMusic().then(()=>{if(playing)evs.forEach(ev=>removeEventListener(ev,firstTouch))});
+}
+evs.forEach(ev=>addEventListener(ev,firstTouch));
+</script>
+</body>
+</html>
